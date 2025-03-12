@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    min-height: 100vh;
+    font-Family: "Inter", san-serif;
+    font-style: normal;
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.Card{
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* height: 80vh; */
+    max-width: 100%;
+}
+.Card img{
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.Card h1{
+    font-size: 1rem;
+}
+
+.Card h5{
+    color: hsl(75, 94%, 57%);
+    margin: 10px 0 25px;
+}
+.Card p{
+    font-size: .9rem;
+}
+.Card ul{
+    list-style-type: none;
+    margin: 15px 0 10px;
+}
+/* .Card ul li {
+    margin: 10px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 20%);
+    border-radius: 5px;
+    font-weight: 700;
+}
+.Card ul li a :hover{
+background-color: hsl(75, 94%, 57%);
+color: hsl(0, 0%, 12%);
+} */
+ 
+.Card ul li{
+    margin-bottom: 15px;
+}
+.Card ul li a{
+    display: block;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.Card ul li a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);   
+}
+
+@media only screen and ( max-width: 320px){
+   .Card img{
+    width: 70px;
+   }
+    .Card{
+        margin: 80px 0 ;
+        padding: 15px 20px;
+    }
+}
+
